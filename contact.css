@@ -1,0 +1,245 @@
+/* NAVBAR */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: sticky; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1030;
+}
+
+.d-inline-block {
+  padding-left: 20px;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #707070;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f40000;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* BUTTON NAVBAR */
+.buttonfx {
+  color: black; 
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #eee;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif; 
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; 
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+/* button*/
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #f40000; 
+  z-index: -1;
+  transform: translate3D(0, -100%, 0); 
+  transition: all 0.5s;
+}
+
+.buttonfx:before {
+  background: #f8f9fa; 
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: #f8f9fa;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+/* Specific page button highlight */
+.nav-link.active[href="contact.html"] .buttonfx {
+  border-bottom: 4px solid #555555; 
+}
+/* END NAVBAR */
+
+/* Section */
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #f40000;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* contact */
+.contact .info-wrap {
+  padding: 30px;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #f40000;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #384046;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #65747f;
+}
+
+.contact .info:hover i {
+  background: #f40000;
+  color: #fff;
+}
+/* end contact  */
+
+/* Footer */
+footer.footer {
+  background-color: #000; 
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer.footer h5 {
+  color: #fff; 
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+footer.footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #999; 
+  margin: 0 0 20px;
+}
+
+footer.footer .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background-color: #222222; 
+  color: #fff;
+  line-height: 1;
+  padding: 8px;
+  margin: 0 4px; 
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: background-color 0.3s ease; 
+}
+
+footer.footer .social-links a:hover {
+  background-color: #f40000; 
+  color: #fff;
+  text-decoration: none;
+}
+
+footer.footer .container {
+  position: relative;
+  max-width: 1140px; 
+  margin: 0 auto;
+  padding: 0 15px; 
+}
+
+footer.footer img {
+  filter: brightness(0) invert(1); 
+  margin-top: 20px;
+}
+
+footer.footer .text-center {
+  font-size: 14px;
+  color: #aaa;
+  padding-top: 20px; 
+}
+
+/* End Footer */
